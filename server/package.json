@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for project",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ted-Luffy/table-booking.git"
+  },
+  "keywords": [
+    "Table",
+    "booking"
+  ],
+  "author": "Ted",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ted-Luffy/table-booking/issues"
+  },
+  "homepage": "https://github.com/Ted-Luffy/table-booking#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.26.0",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "build": "rimraf ./build && tsc",
+  "start": "npm run build && node build/index.js"
+}
